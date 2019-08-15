@@ -1,0 +1,16 @@
+language: julia
+
+os:
+  - linux
+
+julia:
+  - 1.0
+  - 1.1
+  - nightly
+
+matrix:
+  allow_failures:
+    - julia: nightly
+
+after_success:
+  - julia -e 'using Pkg; cd(Pkg.dir("RandomSearch")); Pkg.add("Coverage"); using Coverage; Coveralls.submit(Coveralls.process_folder())'

@@ -1,0 +1,8 @@
+name = "RandomSearch"
+uuid = "763cabea-befd-11e9-16a2-f7d69c67a46c"
+authors = ["Abel Soares Siqueira <abel.s.siqueira@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+NLPModels = "a4795742-8479-5a88-8948-cc11e1c8c1a6"
+SolverTools = "b5612192-2639-5dc1-abfe-fbedd65fab29"
